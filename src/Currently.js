@@ -23,10 +23,10 @@ export default function Currently() {
           <strong>{weatherData.tempreture}</strong>
         </span>
         <sup>
-          <a href="#" className="active celsius">
+          <a href="/" className="active celsius">
             °C
           </a>
-          <a href="#" className="fahrenheit">
+          <a href="/" className="fahrenheit">
             °F
           </a>
         </sup>
