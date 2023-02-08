@@ -20,8 +20,7 @@ export default function Weather(props) {
       icon: response.data.condition.icon,
       wind: response.data.wind.speed,
       city: response.data.city,
-      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-    });
+       });
   }
 
   function handleSubmit(event) {
