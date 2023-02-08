@@ -1,44 +1,69 @@
 body {
-  max-width: 500px;
- 
+  max-width: 400px;
+}
+
+.body {
+  display: block;
+  margin: 0 auto;
 }
 .searchBox {
   border-radius: 10px;
   text-align: center;
   background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 10px;
 }
-::placeholder {
-  color: rgba(63, 76, 119, 0.623);
-  text-align: center;
-  font-size: 90%;
+.currentTime {
+  color: whitesmoke;
+  text-shadow: -2px 2px 4px black;
+  letter-spacing: 1px;
 }
 
 .search {
   border: rgb(201, 205, 218) solid 1px;
   border-radius: 5px;
 }
-
+::placeholder {
+  color: rgba(63, 76, 119, 0.623);
+  text-align: center;
+  font-size: 90%;
+  border: none;
+}
 .submit {
   border: rgb(201, 205, 218) solid 1px;
   border-radius: 5px;
   color: rgba(63, 76, 119, 0.623);
   text-align: center;
 }
+
+.submit:hover {
+  background-color: #537895;
+  color: whitesmoke;
+  border: 1px solid #537895;
+}
 .forecastBox {
   background: linear-gradient(to top, #09203f 0%, #537895 100%);
   color: whitesmoke;
   border-radius: 10px;
   display: flex;
-
+  flex-direction: row;
+  padding-top: 10px;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
 }
 .currently {
-  background: linear-gradient(to top, #09203f 0%, #537895 100%);
   color: whitesmoke;
   border-radius: 10px;
+  max-width: 50%;
 }
 .forecast {
   padding-top: 55px;
+  align-items: flex-end;
+  text-align: center;
 }
+
 .cityName {
   font-size: 30px;
   font-weight: 600;
