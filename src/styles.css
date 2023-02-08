@@ -1,10 +1,7 @@
-body {
-  max-width: 400px;
-}
-
 .body {
+  max-width: 450px;
   display: block;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .searchBox {
   border-radius: 10px;
@@ -16,8 +13,10 @@ body {
 }
 .currentTime {
   color: whitesmoke;
-  text-shadow: -2px 2px 4px black;
-  letter-spacing: 1px;
+  text-shadow: 2px 3px 2px black;
+  font-weight: 500;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .search {
@@ -57,6 +56,7 @@ body {
   color: whitesmoke;
   border-radius: 10px;
   max-width: 50%;
+  text-align: center;
 }
 .forecast {
   padding-top: 55px;
@@ -67,6 +67,7 @@ body {
 .cityName {
   font-size: 30px;
   font-weight: 600;
+  text-shadow: 2px 3px 2px black;
 }
 
 .currentlyText {
@@ -81,6 +82,7 @@ body {
 .tempreture {
   font-size: 40px;
   font-weight: 600;
+  text-shadow: 2px 3px 2px black;
 }
 .degreeIcon {
   font-size: 30px;
