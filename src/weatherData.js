@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import WeatherIcon from "./weatherIcon";
 import humadity from "./icon/humidity.svg";
 import wind from "./icon/wind.svg";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherData(props) {
   return (
@@ -17,16 +18,7 @@ export default function WeatherData(props) {
       <div className="icon">
         <WeatherIcon code={props.data.icon} />
       </div>
-      <span className="tempreture">{Math.round(props.data.temperature)}</span>
-      <span className="CF">
-        <sup>
-          <span className="degreeIcon">°</span>
-          <sup>
-            <span className="celsius">C</span>
-            <span className="fahrenheit m-1 p-1">F</span>
-          </sup>
-        </sup>
-      </span>
+      <WeatherTemperature celsius={props.data.temperature} />
       <div className="description text-capitalize">
         {props.data.description}
       </div>

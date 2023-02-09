@@ -88,16 +88,14 @@ body {
   font-weight: 600;
   text-shadow: 2px 3px 2px black;
 }
-.degreeIcon {
-  font-size: 30px;
+.CF{
+font-size: 19px;
+font-weight: bold;
 }
-.celsius {
-  font-size: 20px;
+.link{
+text-decoration:none;
 }
-.fahrenheit {
-  font-size: 20px;
-  border-left: 1px solid whitesmoke;
-}
+
 .icon {
   font-size: 40px;
   width: 100px;

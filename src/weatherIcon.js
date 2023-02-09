@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 import pic1 from "./icon/clear-sky-day.svg";
 import pic2 from "./icon/clear-sky-night.svg";
 import pic3 from "./icon/few-clouds-day.svg";
