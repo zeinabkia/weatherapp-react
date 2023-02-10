@@ -34,7 +34,7 @@ export default function LocalTime(props) {
   } else {
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
-    let apiU = `https://api.timezonedb.com/v2.1/get-time-zone?key=17XRENCNP355&format=json&by=position&lat=${latitude}&lng=${longitude}`;
+    let apiU = `https://api.timezonedb.com/v2.1/get-time-zone?key=LWU65H8B3ODB&format=json&by=position&lat=${latitude}&lng=${longitude}`;
     axios.get(apiU).then(showLocalTime);
     return null;
   }
