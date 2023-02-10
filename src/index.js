@@ -1,15 +1,14 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import Weather from "./weather"
-
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import Weather from "./weather.js";
 import "./styles.css";
-import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/css/bootstrap.css";
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <StrictMode>
+  <React.StrictMode>
     <Weather defaultCity="Tehran" />
-  </StrictMode>
+  </React.StrictMode>
 );
+reportWebVitals();

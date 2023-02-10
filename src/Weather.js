@@ -14,13 +14,13 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
-      coordinates: response.data.coordinates,
-      temperature: response.data.temperature.current,
-      humidity: response.data.temperature.humidity,
-      description: response.data.condition.description,
-      icon: response.data.condition.icon,
+      coordinates: response.data.coord,
+      temperature: response.data.main.temp,
+      humidity: response.data.main.humidity,
+      description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
       wind: response.data.wind.speed,
-      city: response.data.city,
+      city: response.data.name,
     });
   }
 
@@ -34,14 +34,15 @@ export default function Weather(props) {
   }
 
   function search() {
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=e3f5c70f0f06tb1d5a445afb715o7c01&units=metric`;
+    const apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
     return (
       <div className="body">
-        <div className="searchBox">
+        <div className="box1">
           <div className="currentTime">
             <CurrentTime />
           </div>
@@ -55,14 +56,16 @@ export default function Weather(props) {
             <input className="submit m-1" type="submit" value="Go" />
           </form>
         </div>
-        <span className="forecastBox">
-          <div className="currently">
-            <WeatherData data={weatherData} />
-          </div>
-          <div className="forecast">
-            <WeatherForecast data={weatherData} />
-          </div>
-        </span>
+        <div className="text-center box1">
+          <span className="forecastBox">
+            <div className="currently">
+              <WeatherData data={weatherData} />
+            </div>
+            <div className="forecast">
+              <WeatherForecast coordinates={weatherData.coordinates} />
+            </div>
+          </span>
+        </div>
         <Footer />
       </div>
     );

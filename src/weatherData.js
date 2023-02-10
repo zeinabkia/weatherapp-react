@@ -13,7 +13,7 @@ export default function WeatherData(props) {
       <div className="cityName text-capitalize">{props.data.city}</div>
       <div>
         <span className="currentlyText"> Currently </span>
-        <LocalTime data={props.data.coordinates} />
+        <LocalTime coordinates={props.data.coordinates} />
       </div>
       <div className="currentIcon">
         <WeatherIcon code={props.data.icon} />
