@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
-import Footer from "./Footer";
+import Footer from "./footer";
 import WeatherData from "./weatherData";
 import CurrentTime from "./currentTime";
+import WeatherForecast from "./weatherForecast.js";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -20,7 +21,7 @@ export default function Weather(props) {
       icon: response.data.condition.icon,
       wind: response.data.wind.speed,
       city: response.data.city,
-       });
+    });
   }
 
   function handleSubmit(event) {
@@ -59,15 +60,7 @@ export default function Weather(props) {
             <WeatherData data={weatherData} />
           </div>
           <div className="forecast">
-            <ul>
-              <li>11111111111</li>
-              <li>11111111111</li>
-              <li>11111111111</li>
-              <li>11111111111</li>
-              <li>11111111111</li>
-              <li>11111111111</li>
-              <li>11111111111</li>
-            </ul>
+            <WeatherForecast data={weatherData} />
           </div>
         </span>
         <Footer />

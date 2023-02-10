@@ -50,10 +50,9 @@ body {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   flex-wrap: nowrap;
-  align-content: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .currently {
   color: whitesmoke;
@@ -82,23 +81,24 @@ body {
 .localTime {
   font-size: 15px;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 .tempreture {
   font-size: 40px;
   font-weight: 600;
   text-shadow: 2px 3px 2px black;
 }
-.CF{
-font-size: 19px;
-font-weight: bold;
+.CF {
+  font-size: 19px;
+  font-weight: bold;
 }
-.link{
-text-decoration:none;
+.link {
+  text-decoration: none;
 }
 
-.icon {
+.currentIcon {
   font-size: 40px;
-  width: 100px;
+  width: 130px;
 }
 .description {
   font-size: 15px;
@@ -121,6 +121,41 @@ text-decoration:none;
 }
 .wind {
   font-size: 15px;
+}
+
+.forecastTable {
+  border: 1px solid #f5f5f51f;
+  border-radius: 4px;
+  flex-wrap: nowrap;
+  margin-bottom: 2px;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-right: 5px;
+}
+.forecastTable:hover {
+  transform: scale(1.05);
+  border-radius: 4px;
+  border: 1px solid #f5f5f51f;
+}
+.forecastDay {
+  font-size: 13px;
+}
+
+.forecastIcon {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 5px;
+}
+.maxTemp {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+.minTemp {
+  opacity: 0.7;
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .footer {

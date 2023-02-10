@@ -9,7 +9,16 @@ export default function CurrentTime() {
     }, 1000);
   }, []);
 
-  let currentDay = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  let currentDay = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  
   let Day = currentDay[now.getDay()];
   let months = [
     "Jan",
