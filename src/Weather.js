@@ -56,7 +56,7 @@ export default function Weather(props) {
             <input className="submit m-1" type="submit" value="Go" />
           </form>
         </div>
-        <div className="text-center box1">
+        <div className="text-center box2 containor">
           <span className="forecastBox">
             <div className="currently">
               <WeatherData data={weatherData} />

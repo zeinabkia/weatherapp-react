@@ -2,12 +2,13 @@ body {
   font-family: "Prompt", sans-serif !important;
 }
 .body {
-  max-width: 450px;
+  max-width: 420px;
   display: block;
   margin: 0px auto;
 }
 .box1 {
   border-radius: 10px;
+  max-width: 400px;
   text-align: center;
   background: linear-gradient(to top, #09203f 0%, #537895 100%);
   margin-top: 20px;
@@ -17,7 +18,7 @@ body {
 
 .box2 {
   text-align: center !important;
-  max-width: 500px;
+  max-width: 400px;
 }
 .currentTime {
   color: white;
@@ -29,6 +30,7 @@ body {
 .search {
   border: rgb(201, 205, 218) solid 1px;
   border-radius: 5px;
+  width: 50%;
 }
 ::placeholder {
   color: rgba(63, 76, 119, 0.623);
@@ -59,6 +61,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-content: center;
+  align-items: stretch;
 }
 .currently {
   color: whitesmoke;
