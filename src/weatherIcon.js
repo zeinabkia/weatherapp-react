@@ -40,5 +40,5 @@ export default function WeatherIcon(props) {
     "50d": pic17,
     "50n": pic18,
   };
-  return <img src={imageMapping[props.code]} alt="weatherICON" />;
+  return <img src={imageMapping[props.code]} alt="weather" />;
 }

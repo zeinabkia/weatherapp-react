@@ -24,7 +24,7 @@ export default function WeatherData(props) {
       </div>
 
       <span>
-        <img src={humadity} className="humadityIcon" alt="humadityIcon" />
+        <img src={humadity} className="humadityIcon" alt="humadity" />
       </span>
       <span className="humadity">{props.data.humidity}</span>
       <span>
@@ -32,7 +32,7 @@ export default function WeatherData(props) {
       </span>
 
       <span>
-        <img className="windIcon" src={wind} alt="windIcon" />
+        <img className="windIcon" src={wind} alt="wind" />
       </span>
       <span className="wind">{Math.round(props.data.wind)}</span>
       <span>
