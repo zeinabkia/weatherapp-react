@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
-import Weather from "./weather.js";
+import Weather from "./Weather.js";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 
