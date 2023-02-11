@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React , { useState, useEffect } from "react";
 import axios from "axios";
 import "./styles.css";
 
@@ -8,7 +8,7 @@ export default function LocalTime(props) {
 
   useEffect(() => {
     setLoaded(false);
-  }, [props.coordinates]);
+  }, [props.data]);
 
   function FormatDate(formatted) {
     let date = new Date(formatted);
@@ -32,10 +32,8 @@ export default function LocalTime(props) {
   if (loaded) {
     return <span className="localTime"> {time} </span>;
   } else {
-    let longitude = props.coordinates.lon;
-    let latitude = props.coordinates.lat;
-    let apiU = `https://api.timezonedb.com/v2.1/get-time-zone?key=LWU65H8B3ODB&format=json&by=position&lat=${latitude}&lng=${longitude}`;
+    let apiU = `https://api.timezonedb.com/v2.1/get-time-zone?key=17XRENCNP355&format=json&by=position&lat=${props.data.latitude}&lng=${props.data.longitude}`;
     axios.get(apiU).then(showLocalTime);
     return null;
-  }
+   }
 }
