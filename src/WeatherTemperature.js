@@ -25,7 +25,12 @@ export default function WeatherTemperature(props) {
             <sup>
               {" "}
               °C |{" "}
-              <a href="/" onClick={showFahrenheit} className="link">
+              <a
+                href="/"
+                onClick={showFahrenheit}
+                className="link"
+                rel="noreferrer"
+              >
                 °F
               </a>
             </sup>
@@ -41,7 +46,12 @@ export default function WeatherTemperature(props) {
           <span className="CF">
             <sup>
               {" "}
-              <a href="/" onClick={showCelsius} className="link">
+              <a
+                href="/"
+                onClick={showCelsius}
+                className="link"
+                rel="noreferrer"
+              >
                 °C
               </a>{" "}
               | °F
