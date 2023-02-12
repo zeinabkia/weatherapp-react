@@ -3,9 +3,9 @@ import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
 import Footer from "./Footer";
-import WeatherData from "./WeatherData";
-import CurrentTime from "./CurrentTime";
-import WeatherForecast from "./WeatherForecast.js";
+import WeatherData from "./weatherData";
+import CurrentTime from "./currentTime";
+import WeatherForecast from "./weatherForecast.js";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -34,7 +34,7 @@ export default function Weather(props) {
   }
 
   function search() {
-     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=e3f5c70f0f06tb1d5a445afb715o7c01&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=e3f5c70f0f06tb1d5a445afb715o7c01&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 

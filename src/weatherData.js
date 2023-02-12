@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.css";
-import WeatherIcon from "./WeatherIcon";
+import WeatherIcon from "./weatherIcon";
 import humadity from "./icon/humidity.svg";
 import wind from "./icon/wind.svg";
 import WeatherTemperature from "./WeatherTemperature";
-import LocalTime from "./LocalTime";
+import LocalTime from "./localTime";
 
 export default function WeatherData(props) {
   return (
