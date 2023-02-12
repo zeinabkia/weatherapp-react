@@ -86,30 +86,33 @@ body {
 
 .currentlyText {
   font-size: 15px;
-  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 3px 2px black;
 }
 
 .localTime {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 1px;
+  text-shadow: 2px 3px 2px black;
+}
+.currentIcon {
+  font-size: 40px;
+  width: 130px;
 }
 .tempreture {
   font-size: 40px;
   font-weight: 600;
   text-shadow: 2px 3px 2px black;
 }
-.CF {
+.degree {
   font-size: 19px;
   font-weight: bold;
 }
-.link {
-  text-decoration: none;
-}
-
-.currentIcon {
-  font-size: 40px;
-  width: 130px;
+.feel {
+  font-size: 14px;
+  font-weight: 300;
+  text-shadow: none;
 }
 .description {
   font-size: 15px;

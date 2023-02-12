@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import WeatherIcon from "./weatherIcon";
 import humadity from "./icon/humidity.svg";
 import wind from "./icon/wind.svg";
-import WeatherTemperature from "./WeatherTemperature";
 import LocalTime from "./localTime";
 
 export default function WeatherData(props) {
@@ -12,14 +11,24 @@ export default function WeatherData(props) {
     <div>
       <div className="cityName text-capitalize">{props.data.city}</div>
       <div>
-        <span className="currentlyText"> Currently </span>
+        <span className="currentlyText"> Local Time </span>
         <LocalTime data={props.data.coordinates} />
       </div>
       <div className="currentIcon">
         <WeatherIcon code={props.data.icon} />
       </div>
-      <WeatherTemperature celsius={props.data.temperature} />
-      <div className="description text-capitalize">
+      <div className="tempreture">
+        {Math.round(props.data.temperature)}
+        <sup>
+          <span className="degree">
+            <smal>°C </smal>
+          </span>
+          <span className="feel">
+            <sup>Feels {Math.round(props.data.Feeling)}°</sup>
+          </span>
+        </sup>
+      </div>
+            <div className="description text-capitalize">
         {props.data.description}
       </div>
 
