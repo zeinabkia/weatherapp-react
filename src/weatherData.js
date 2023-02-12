@@ -21,10 +21,10 @@ export default function WeatherData(props) {
         {Math.round(props.data.temperature)}
         <sup>
           <span className="degree">
-            <smal>°C </smal>
+            <smal> °C </smal>
           </span>
           <span className="feel">
-            <sup>Feels {Math.round(props.data.Feeling)} °</sup>
+            <sup>Feels {Math.round(props.data.Feeling)}°</sup>
           </span>
         </sup>
       </div>
