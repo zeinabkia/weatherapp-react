@@ -24,11 +24,11 @@ export default function WeatherData(props) {
             <smal>°C </smal>
           </span>
           <span className="feel">
-            <sup>Feels {Math.round(props.data.Feeling)}°</sup>
+            <sup>Feels {Math.round(props.data.Feeling)} °</sup>
           </span>
         </sup>
       </div>
-            <div className="description text-capitalize">
+      <div className="description text-capitalize">
         {props.data.description}
       </div>
 
