@@ -41,7 +41,7 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="body">
+      <div className="body m-1">
         <div className="box1">
           <div className="currentTime">
             <CurrentTime />

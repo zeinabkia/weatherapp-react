@@ -5,6 +5,7 @@ body {
   max-width: 420px;
   display: block;
   margin: 0px auto;
+  margin-top: 20px;
 }
 .box1 {
   border-radius: 10px;
